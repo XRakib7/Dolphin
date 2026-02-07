@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "184229957575",
+    "firebase_url": "https://dolphin-t-default-rtdb.firebaseio.com",
+    "project_id": "dolphin-t",
+    "storage_bucket": "dolphin-t.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184229957575:android:5d04d8b7c552dda7e5d3e2",
+        "android_client_info": {
+          "package_name": "com.softcraft.dolphin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM3D7Tjo0MIcYxt1IDcfz79nNo_O-Zoi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
