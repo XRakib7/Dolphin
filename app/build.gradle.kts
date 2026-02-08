@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+    id("kotlin-kapt")
 }
 
 android {
@@ -13,7 +14,7 @@ android {
         minSdk = 26
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,10 +38,8 @@ android {
 }
 
 dependencies {
-    // Source: https://mvnrepository.com/artifact/androidx.datastore/datastore-preferences
-    runtimeOnly("androidx.datastore:datastore-preferences:1.2.0")
-    // Source: https://mvnrepository.com/artifact/androidx.datastore/datastore-preferences-core
-    runtimeOnly("androidx.datastore:datastore-preferences-core:1.2.0")
+    implementation("androidx.room:room-runtime:2.8.4")
+    kapt("androidx.room:room-compiler:2.8.4")
     implementation("com.squareup.okhttp3:okhttp:5.3.2")
     implementation("javax.inject:javax.inject:1")
     implementation(libs.androidx.core.ktx)
